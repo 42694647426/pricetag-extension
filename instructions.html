@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Use PriceTag - Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #111827;
+            --secondary: #4b5563;
+            --accent: #468be5;
+            --bg: #f9fafb;
+            --card-bg: #ffffff;
+            --border: #e5e7eb;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg);
+            color: var(--primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            padding: 16px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-sizing: border-box;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--secondary);
+            font-weight: 500;
+            font-size: 14px;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .cta-btn {
+            background-color: var(--primary);
+            color: white !important;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Content Container */
+        .container {
+            max-width: 800px;
+            margin: 120px auto 100px;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: 800;
+            letter-spacing: -1.5px;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: var(--secondary);
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .guide-section {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 40px;
+            border: 1px solid var(--border);
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+        }
+
+        .guide-section h2 {
+            font-size: 24px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        ol {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+            color: var(--secondary);
+            font-size: 16px;
+        }
+
+        li strong {
+            color: var(--primary);
+        }
+
+        .highlight {
+            background: #e0e7ff;
+            color: #3730a3;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .screenshot-inline {
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 1px solid var(--border);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: rgba(255,255,255,0.7);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">🏷️ PriceTag</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="instructions.html" style="color: var(--primary); font-weight: 600;">How it Works</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="https://chrome.google.com/webstore" target="_blank" class="cta-btn">Add to Chrome</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Welcome to PriceTag</h1>
+        <p class="subtitle">Your step-by-step guide to mastering automated price tracking.</p>
+
+        <div class="guide-section">
+            <h2>📌 How to Track a Product</h2>
+            <ol>
+                <li>Open any product web page (Amazon, Walmart, BestBuy, etc.).</li>
+                <li>Click the <strong>🏷️ PriceTag</strong> extension icon in your browser toolbar.</li>
+                <li>Click the <span class="highlight">Track Price on this Page</span> button.</li>
+                <li>Move your mouse over the specific price text on the screen. It will highlight in an intelligent blue box.</li>
+                <li>Click the price! The extension will confirm the text it found and begin monitoring your item hourly.</li>
+            </ol>
+            <img src="assets/screen1.png" alt="Tracking Interface" class="screenshot-inline">
+        </div>
+
+        <div class="guide-section">
+            <h2>📊 How to View Tracked Products</h2>
+            <ol>
+                <li>Click the extension icon at the top of your browser.</li>
+                <li>Select the <span class="highlight">Open Dashboard</span> button.</li>
+                <li>Your dashboard shows all your currently watched items, their original tracked prices, product thumbnails, and links back to the stores.</li>
+            </ol>
+            <img src="assets/screen3.png" alt="Dashboard View" class="screenshot-inline">
+        </div>
+
+        <div class="guide-section">
+            <h2>⚙️ Advanced Settings (Highly Recommended)</h2>
+            <p style="color: var(--secondary); margin-bottom: 20px;">Inside the Dashboard, you have access to two powerful configuration panels:</p>
+            <ul>
+                <li style="margin-bottom: 20px;"><strong>Email Notifications:</strong> By default, the extension uses native computer popups when a price drops. Add your email address in the configuration panel to receive beautiful HTML email alerts seamlessly!</li>
+                <li><strong>Gemini AI Integration:</strong> Modern retail websites constantly try to scramble their code to block simple price scrapers. Providing a free Gemini API key guarantees the extension can intelligently read even the most stubborn websites by using Google's AI to scan the page exactly like a human would!</li>
+            </ul>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+            <p style="color: var(--secondary); margin-bottom: 20px;">Still running into issues? We're here to help.</p>
+            <a href="mailto:contact@example.com?subject=PriceTag%20Support" class="cta-btn" style="padding: 14px 30px;">Contact Support</a>
+        </div>
+    </div>
+
+    <footer>
+        <div style="font-size: 20px; font-weight: 800; color: white; margin-bottom: 20px;">🏷️ PriceTag</div>
+        <div style="margin-bottom: 20px;">
+            <a href="index.html">Home</a>
+            <a href="instructions.html">Support / Guide</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <div style="font-size: 13px;">&copy; 2026 PriceTag Extension. All rights reserved.</div>
+    </footer>
+
+</body>
+</html>
