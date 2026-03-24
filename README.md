@@ -10,6 +10,6 @@
 - **Beautiful Email Alerts**: Get notified instantly via stunning HTML email alerts or native Chrome popups the exact moment your item goes on sale.
 
 ## Links
-- [Home Page](index.html)
-- [How it Works / Guide](instructions.html)
-- [Privacy Policy](privacy.html)
+- [Home Page](https://42694647426.github.io/pricetag-extension/)
+- [How it Works / Guide](https://42694647426.github.io/pricetag-extension/instructions.html)
+- [Privacy Policy](https://42694647426.github.io/pricetag-extension/privacy.html)
